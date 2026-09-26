@@ -1,4 +1,6 @@
-plugins {
-    id("com.android.application") version "8.5.2" apply false
-    id("org.jetbrains.kotlin.android") version "1.9.24" apply false
+dependencies {
+    // Thêm dòng này để đồng bộ tất cả thư viện Kotlin về cùng 1 phiên bản
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.22"))
+    
+    // ... các dependencies khác của bạn
 }
